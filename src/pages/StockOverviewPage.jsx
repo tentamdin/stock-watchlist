@@ -5,9 +5,9 @@ import { StockList } from "../components/StockList";
 export const StockOverviewPage = () => {
   return (
     <>
-      <h1>StockOverviewPage</h1>
-      <Search/>
-      <StockList/>
+      <div className="text-center mt-5 fw-bold fs-1">Stock Watchlist</div>
+      <Search />
+      <StockList />
     </>
   );
 };

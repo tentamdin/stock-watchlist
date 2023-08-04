@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import finHub from "../api/finHub";
 import { StockChart } from "../components/StockChart";
+import { StockInfo } from "../components/StockInfo";
 
 const formatData = (data) => {
   return data.t.map((ele, index) => {
@@ -71,6 +72,7 @@ export const StockDetailPage = () => {
       {chartData && (
         <div>
           <StockChart chartData={chartData} symbol={symbol} />
+          <StockInfo symbol={symbol}/>
         </div>
       )}
     </>
